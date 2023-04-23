@@ -1,3 +1,4 @@
 #!/bin/sh
 
-cd ../src && ../venv/bin/python3 ./main.py
+# Execute main python entrypoint from within virtual environment.
+  cd ../src && ../.venv/bin/python3 ./main.py
