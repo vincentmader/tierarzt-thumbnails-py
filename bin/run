@@ -1,4 +1,7 @@
 #!/bin/sh
 
-# Execute main python entrypoint from within virtual environment.
-  cd ../src && ../.venv/bin/python3 ./main.py
+# Define path to python executable (in virtual environment).
+  PYTHON3="../.venv/bin/python3"
+
+# Execute main python entrypoint.
+  cd ../src && $PYTHON3 ./main.py
