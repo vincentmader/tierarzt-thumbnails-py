@@ -1,5 +1,4 @@
 run:
-	cd ./bin && ./run
-
+	cd ./bin && ./run.sh
 setup:
-	cd ./bin && ./setup
+	cd ./bin && ./setup.sh
