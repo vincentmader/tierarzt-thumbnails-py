@@ -4,4 +4,4 @@
   [ -d ../.venv ] || python3 -m virtualenv ../.venv
 
 # Install python dependencies.
-  ../.venv/bin/pip3 install -r ../requirements.txt
+  cd .. && ./.venv/bin/pip3 install -r requirements.txt
