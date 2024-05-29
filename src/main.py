@@ -21,7 +21,7 @@ for entry in sorted(os.listdir(path_to_gallery)):
     # Loop over all images in "Quartal" directory.
     for entry_2 in sorted(os.listdir(path_to_quarter)):
         x_4 += 1
-        if entry_2 in [".DS_Store", "thumbnails"]:
+        if entry_2 in [".DS_Store", ".dropbox", "thumbnails"]:
             continue
         path_to_image = Path(path_to_quarter, entry_2)
 
