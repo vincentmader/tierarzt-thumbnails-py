@@ -4,13 +4,14 @@ from pathlib import Path
 from PIL import Image
 from termcolor import colored
 
+from config import PATH_TO_GALLERY
+
 x_1, x_2, x_3, x_4 = 0, 0, 0, 0
 print()
 
 # Loop over all "Quartal" directories.
-path_to_gallery = Path("../../../img-file-server/static/gallery/") # TODO Make sure path is correct.
-for entry in sorted(os.listdir(path_to_gallery)):
-    path_to_quarter = Path(path_to_gallery, entry)
+for entry in sorted(os.listdir(PATH_TO_GALLERY)):
+    path_to_quarter = Path(PATH_TO_GALLERY, entry)
 
     # Consider only directories that start with "Images_"
     if not entry.startswith("Images_"):
