@@ -20,7 +20,7 @@ for entry in sorted(os.listdir(PATH_TO_GALLERY)):
         continue
 
     # Create `thumbnails` sub-directory.
-    os.makedirs(Path(path_to_quarter, "thumbnails"))
+    os.makedirs(Path(path_to_quarter, "thumbnails"), exist_ok=True)
 
     # Loop over all images in "Quartal" directory.
     for entry_2 in sorted(os.listdir(path_to_quarter)):
